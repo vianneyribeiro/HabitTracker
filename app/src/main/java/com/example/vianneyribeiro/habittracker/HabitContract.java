@@ -8,14 +8,11 @@ import android.provider.BaseColumns;
 
 public final class HabitContract {
 
-    public HabitContract(){}
+    private HabitContract() {}
 
-    public static abstract class HabitEntry implements BaseColumns{
+    public static abstract class HabitEntry implements BaseColumns {
 
         public static final String TABLE_NAME = "corrida";
-
-
-
 
         // Colunas
         public static final String _ID = BaseColumns._ID;
@@ -28,12 +25,6 @@ public final class HabitContract {
         public final static int RUNNING_10K = 1;
         public final static int RUNNING_20K = 2;
 
-
-
     }
-
-
-
-
 
 }

@@ -54,7 +54,7 @@ public class HabitDbHelper extends SQLiteOpenHelper {
                 HabitContract.HabitEntry.COLUMN_DISTANCE,
                 HabitContract.HabitEntry.COLUMN_COMMENT
         };
-        Cursor cursor = db.query(
+        return db.query(
                 HabitContract.HabitEntry.TABLE_NAME,
                 projection,
                 null,
@@ -63,6 +63,5 @@ public class HabitDbHelper extends SQLiteOpenHelper {
                 null,
                 null
         );
-        return cursor;
     }
 }
